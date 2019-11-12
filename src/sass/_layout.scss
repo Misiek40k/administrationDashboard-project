@@ -16,12 +16,43 @@ body {
   display: flex;
   align-items: center;
 
+  .content__button {
+    border-left: $base-unit * 0.05 solid $color-border;
+    height: 100%;
+    display: flex;
+
+    .button__link {
+      display: flex;
+      align-items: center;
+      padding: 0 $base-unit;
+
+      .link__img {
+        display: inline-block;
+        width: $base-unit;
+        height: $base-unit;
+        background: red;
+      }
+
+      .link__img.account{
+        mask: url(../images/icons/login.svg) center no-repeat;
+      }
+
+      .link__img.notification{
+        mask: url(../images/icons/notification.svg) center no-repeat;
+      }
+
+      .link__img.logout{
+        mask: url(../images/icons/quit.svg) center no-repeat;
+      }
+    }
+  }
+
   .content__dropdown {
     position: relative;
     display: inline-block;
     height: 100%;
-    top: 50%;
-    transform: translateY(-15%);
+    padding: 0 $base-unit;
+    border-left: $base-unit * .05 solid $color-border;
 
     &:hover {
       .dropdown__links {
