@@ -1,5 +1,47 @@
+body {
+  background: $color-background;
+}
+
 .top-bar {
   width: 100%;
-  height: 50px;
-  background: red;
+  height: $base-unit * 3;
+  display: flex;
+  justify-content: flex-end;
+  background: $color-section-background;
+  border-bottom: $base-unit * 0.05 solid $color-border;
+  position: fixed;
+}
+
+.top-bar__content {
+  display: flex;
+  align-items: center;
+
+  .content__dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-15%);
+
+    &:hover {
+      .dropdown__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .dropdown__links {
+      display: none;
+      position: absolute;
+      background-color: $color-background;
+      min-width: $base-unit * 5;
+      box-shadow: 0 $base-unit * 0.5 $base-unit 0 rgba(0, 0, 0, 0.2);
+      padding: $base-unit * 0.6 $base-unit * 0.8;
+    }
+  }
 }
