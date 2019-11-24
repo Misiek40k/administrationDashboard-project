@@ -35,13 +35,13 @@ body {
       }
 
       .link__img.account {
-        background: url(../images/icons/login.svg) no-repeat center center;
+        background: url(../images/icons/login.svg) no-repeat;
         border: $base-unit * 0.05 solid $color-dark;
         border-radius: 50%;
       }
 
       .link__img.notification {
-        background: url(../images/icons/notification.svg) no-repeat center center;
+        background: url(../images/icons/notification.svg) no-repeat;
       }
 
       .link__img.logout {
