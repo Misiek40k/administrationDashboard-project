@@ -1,0 +1,80 @@
+.top-bar {
+  width: 100%;
+  height: $base-unit * 3;
+  display: flex;
+  justify-content: flex-end;
+  background: $color-section-background;
+  border-bottom: $base-unit * 0.05 solid $color-border;
+  position: fixed;
+}
+
+.top-bar__content {
+  display: flex;
+  align-items: center;
+
+  .content__button {
+    border-left: $base-unit * 0.05 solid $color-border;
+    height: 100%;
+    display: flex;
+
+    .button__link {
+      display: flex;
+      align-items: center;
+      padding: 0 $base-unit;
+
+      .link__img {
+        display: block;
+        width: $base-unit;
+        height: $base-unit;
+        filter: opacity(35%);
+        background-size: $base-unit * 0.9 $base-unit * 0.9;
+      }
+
+      .link__img.account {
+        width: $base-unit * 0.8;
+        height: $base-unit * 0.8;
+        background: url(../assets/icons/login.svg) no-repeat 49%;
+        background-size: $base-unit * 0.8 $base-unit * 0.8;
+        border: $base-unit * 0.05 solid $color-dark;
+        border-radius: 50%;
+      }
+
+      .link__img.notification {
+        background: url(../assets/icons/notification.svg) no-repeat;
+      }
+
+      .link__img.logout {
+        background: url(../assets/icons/quit.svg) no-repeat center center;
+      }
+    }
+  }
+
+  .content__dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    padding: 0 $base-unit;
+    border-left: $base-unit * 0.05 solid $color-border;
+
+    &:hover {
+      .dropdown__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .dropdown__links {
+      display: none;
+      position: absolute;
+      background-color: $color-background;
+      min-width: $base-unit * 5;
+      box-shadow: 0 $base-unit * 0.5 $base-unit 0 rgba(0, 0, 0, 0.2);
+      padding: $base-unit * 0.6 $base-unit * 0.8;
+    }
+  }
+}

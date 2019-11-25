@@ -1,11 +1,12 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-@import "./components/global";
+@import "global";
 @import "layout";
 
 /* Components */
 
+@import "./components/top-bar";
 
 /* Sections */
 
