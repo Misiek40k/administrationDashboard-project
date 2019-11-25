@@ -41,10 +41,19 @@
 
       .link__img.notification {
         background: url(../assets/icons/notification.svg) no-repeat;
+        text-indent: -9999px;
       }
 
       .link__img.logout {
         background: url(../assets/icons/quit.svg) no-repeat center center;
+      }
+
+      .link__txt.notification {
+        text-indent: -9999px;
+      }
+
+      .link__txt.logout {
+        text-indent: -9999px;
       }
     }
   }
@@ -61,6 +70,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 1;
       }
     }
 
