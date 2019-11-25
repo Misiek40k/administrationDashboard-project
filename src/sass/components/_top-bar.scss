@@ -30,7 +30,7 @@
         display: block;
         width: $base-unit;
         height: $base-unit;
-        filter: opacity(35%);
+        filter: opacity(50%);
         background-size: $base-unit * 0.9 $base-unit * 0.9;
       }
 
@@ -50,6 +50,17 @@
 
       .link__img.logout {
         background: url(../assets/icons/quit.svg) no-repeat center center;
+      }
+
+      .link__txt {
+        font-family: $font-text;
+        font-size: $base-unit * 0.65;
+        font-weight: $fw-light;
+        color: $color-link;
+      }
+
+      .link__txt.account {
+        margin-left: $base-unit * 0.5;
       }
 
       .link__txt.notification {
