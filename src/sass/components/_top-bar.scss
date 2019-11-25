@@ -48,6 +48,16 @@
         text-indent: -9999px;
       }
 
+      .link__img.notification::before {
+        content: "";
+        display: block;
+        float: right;
+        width: $base-unit * 0.5;
+        height: $base-unit * 0.5;
+        border-radius: 50%;
+        background-color: $color-main;
+      }
+
       .link__img.logout {
         background: url(../assets/icons/quit.svg) no-repeat center center;
       }
