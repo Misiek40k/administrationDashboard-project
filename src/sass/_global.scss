@@ -1,3 +1,10 @@
+body {
+  font-style: $fs-regular;
+  font-weight: $fw-light;
+  font-family: $font-text;
+  background: $color-background;
+}
+
 h1 {
   font-size: $base-unit;
   font-family: $font-logo, $font-header;
@@ -5,8 +12,19 @@ h1 {
   color: $color-section-background;
 }
 
+h2 {
+  font-size: $base-unit * 0.8;
+  font-family: $font-text;
+  font-weight: $fw-bold;
+  color: $color-dark-lighter;
+}
+
 a {
   color: $color-link;
   text-decoration: none;
   font-weight: $fw-light;
+}
+
+ul {
+  list-style-type: none;
 }
