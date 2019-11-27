@@ -28,6 +28,7 @@
 
   .content__nav {
     padding-bottom: $base-unit * 2;
+    margin-bottom: $base-unit * 2;
     border-bottom: 1px solid $color-dark-lighter;
 
     .nav__list {
@@ -101,6 +102,27 @@
         font-size: $base-unit * 0.7;
         color: $color-dark-lighter;
       }
+    }
+  }
+
+  .content__contact {
+    padding: 0 $base-unit;
+
+    .contact__link {
+      display: flex;
+      align-items: center;
+    }
+
+    .link__img {
+      width: $base-unit * 2;
+      height: $base-unit * 2;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: $base-unit * 0.5;
+    }
+
+    .link__txt {
+      font-size: $base-unit * 0.7;
     }
   }
 }
