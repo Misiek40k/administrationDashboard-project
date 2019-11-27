@@ -1,3 +1,10 @@
+h1 {
+  font-size: $base-unit;
+  font-family: $font-logo, $font-header;
+  font-weight: $fw-regular;
+  color: $color-section-background;
+}
+
 a {
   color: $color-link;
   text-decoration: none;
