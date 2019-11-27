@@ -8,6 +8,11 @@
 .side-bar__content {
   width: 100%;
 
+  .content__top {
+    padding: 0 $base-unit;
+    justify-content: space-between;
+  }
+
   .content__nav {
     padding-bottom: $base-unit * 2;
     border-bottom: 1px solid $color-dark-lighter;
