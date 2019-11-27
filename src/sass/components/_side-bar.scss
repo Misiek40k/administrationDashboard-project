@@ -11,6 +11,19 @@
   .content__top {
     padding: 0 $base-unit;
     justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+
+  .top__hamburger {
+    cursor: pointer;
+
+    .hamburger__bar {
+      width: $base-unit;
+      height: $base-unit * 0.1;
+      background-color: $color-dark-lighter;
+      margin: $base-unit * 0.25 0;
+    }
   }
 
   .content__nav {
