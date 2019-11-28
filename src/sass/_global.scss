@@ -14,8 +14,13 @@ h1 {
 
 h2 {
   font-size: $base-unit * 0.8;
-  font-family: $font-text;
   font-weight: $fw-bold;
+  color: $color-dark-lighter;
+}
+
+h3 {
+  font-size: $base-unit * 0.7;
+  font-weight: $fw-medium;
   color: $color-dark-lighter;
 }
 

@@ -111,6 +111,18 @@
     .contact__link {
       display: flex;
       align-items: center;
+      position: relative;
+    }
+
+    .link__overlay::before {
+      position: absolute;
+      content: "";
+      display: block;
+      left: $base-unit * 1.5;
+      width: $base-unit * 0.5;
+      height: $base-unit * 0.5;
+      border-radius: 50%;
+      background-color: $color-active;
     }
 
     .link__img {
