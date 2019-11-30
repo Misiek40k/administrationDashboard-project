@@ -1,0 +1,16 @@
+.section {
+  background-color: $color-section-background;
+  max-width: $base-unit * 52.5;
+  margin: 0 $base-unit $base-unit $base-unit * 10;
+  box-shadow: 0 $base-unit * 0.1 $base-unit * 0.2 0 rgba(0, 0, 0, 0.2);
+
+  @include min-media($br-xl-desktop) {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+}
+
+.section__header {
+  padding: $base-unit * 0.75;
+  border-bottom: $base-unit * 0.05 solid $color-border;
+}
