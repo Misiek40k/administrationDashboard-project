@@ -40,6 +40,10 @@ ol {
   list-style-type: none;
 }
 
+.container {
+  max-width: $base-unit * 34.5;
+}
+
 .btn {
   font-size: $base-unit * 0.9;
   font-weight: $fw-light;
