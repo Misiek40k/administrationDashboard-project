@@ -1,3 +1,73 @@
 .general-section {
   margin-top: $base-unit * 4;
 }
+
+.content__date {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: $base-unit * 1.65;
+  padding-bottom: $base-unit * 1.9;
+  border-bottom: $color-border solid $base-unit * 0.1;
+
+  .date__inputs {
+    display: flex;
+    margin-right: $base-unit * 0.75;
+
+    .inputs__item {
+      border: $color-border solid $base-unit * 0.1;
+      height: $base-unit * 2;
+
+      &:first-of-type {
+        border-radius: $base-unit * 0.25 0 0 $base-unit * 0.25;
+      }
+
+      &:last-of-type {
+        border-radius: 0 $base-unit * 0.25 $base-unit * 0.25 0;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: $color-border;
+          width: $base-unit * 0.1;
+          height: 50%;
+          top: 25%;
+          left: 0;
+        }
+      }
+
+      .inputs__input {
+        width: $base-unit * 7.5;
+        height: 100%;
+        padding-left: $base-unit;
+        border: none;
+        color: $color-dark;
+      }
+
+      &:first-of-type {
+        border-right: none;
+      }
+
+      &:last-of-type {
+        position: relative;
+        border-left: none;
+
+        .inputs__input {
+          padding-right: $base-unit * 1.5;
+        }
+
+        .inputs__icon {
+          position: absolute;
+          display: block;
+          width: $base-unit;
+          height: $base-unit;
+          left: 85%;
+          top: 25%;
+          filter: opacity(50%);
+        }
+      }
+    }
+  }
+}
