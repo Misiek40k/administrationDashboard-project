@@ -53,6 +53,7 @@ ol {
     display: block;
     width: $base-unit;
     height: $base-unit;
+    filter: invert(1);
   }
 }
 
