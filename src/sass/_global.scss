@@ -39,3 +39,27 @@ ul {
 ol {
   list-style-type: none;
 }
+
+.btn {
+  font-size: $base-unit * 0.9;
+  font-weight: $fw-light;
+  height: $base-unit * 2;
+  padding: 0 $base-unit * 0.5;
+  border: none;
+  cursor: pointer;
+  border-radius: $base-unit * 0.2;
+
+  .btn-icon {
+    display: block;
+    width: $base-unit;
+    height: $base-unit;
+  }
+}
+
+.btn-main {
+  background: $color-main;
+
+  &:hover {
+    background: $color-main-active;
+  }
+}
