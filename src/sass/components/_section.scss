@@ -12,9 +12,26 @@
 
 .section__header {
   padding: $base-unit * 0.75;
-  border-bottom: $base-unit * 0.05 solid $color-border;
+  border-bottom: $base-unit * 0.1 solid $color-border;
 }
 
 .section__content {
   margin: 0 auto;
+}
+
+.content__list-digit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: $base-unit * 3.75;
+  max-height: $base-unit * 5.5;
+
+  .list-digit__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $base-unit * 16;
+    padding: $base-unit * 1.15 0 $base-unit * 0.5;
+    border-bottom: $color-border solid $base-unit * 0.1;
+  }
 }

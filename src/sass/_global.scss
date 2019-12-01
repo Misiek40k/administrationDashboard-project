@@ -25,6 +25,18 @@ h3 {
   color: $color-dark-lighter;
 }
 
+h4 {
+  font-size: $base-unit * 0.8;
+  font-weight: $fw-bold;
+  color: $color-dark-lighter;
+  margin: 0;
+}
+
+p {
+  font-size: $base-unit * 0.8;
+  margin: 0;
+}
+
 a {
   color: $color-link;
   font-size: $base-unit * 0.8;
@@ -42,6 +54,7 @@ ol {
 
 .container {
   max-width: $base-unit * 34.5;
+  margin: 0 auto;
 }
 
 .btn {
