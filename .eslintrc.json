@@ -12,9 +12,7 @@
         }
     },
     "globals": {
-        "flatpickr": false,
-        "rangeSlider": false,
-        "Handlebars": false
+        "Chart": false
     },
     "rules": {
         "indent": [
