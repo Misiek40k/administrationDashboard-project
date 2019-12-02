@@ -57,6 +57,8 @@ ol {
   margin: 0 auto;
 }
 
+/*Buttons*/
+
 .btn {
   font-size: $base-unit * 0.9;
   font-weight: $fw-light;
@@ -82,9 +84,43 @@ ol {
   }
 }
 
+/*Color Tabs*/
+
 .color-tab {
+  position: relative;
+  display: inline-block;
   height: $base-unit * 2;
-  background: red;
   line-height: $base-unit * 2;
   padding: 0 $base-unit 0 $base-unit * 2;
+  color: $color-link;
+  border-radius: $base-unit * 0.1;
+
+  &::before {
+    position: absolute;
+    left: $base-unit * 0.8;
+    top: $base-unit * 0.6;
+    content: "";
+    display: inline-block;
+    width: $base-unit * 0.8;
+    height: $base-unit * 0.8;
+    border-radius: $base-unit * 0.4;
+    background-color: $color-section-background;
+  }
+}
+
+.color-tab.active {
+  background: $color-border;
+  color: $color-dark-lighter;
+}
+
+.color-tab.color-tab-main::before {
+  background-color: $color-main;
+}
+
+.color-tab.color-tab-link::before {
+  background-color: $color-link;
+}
+
+.color-tab.color-tab-active::before {
+  background-color: $color-active;
 }
