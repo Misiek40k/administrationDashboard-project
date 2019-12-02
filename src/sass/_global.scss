@@ -94,6 +94,7 @@ ol {
   padding: 0 $base-unit 0 $base-unit * 2;
   color: $color-link;
   border-radius: $base-unit * 0.1;
+  cursor: pointer;
 
   &::before {
     position: absolute;
