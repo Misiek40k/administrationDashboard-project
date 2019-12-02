@@ -81,3 +81,10 @@ ol {
     background: $color-main-active;
   }
 }
+
+.color-tab {
+  height: $base-unit * 2;
+  background: red;
+  line-height: $base-unit * 2;
+  padding: 0 $base-unit 0 $base-unit * 2;
+}

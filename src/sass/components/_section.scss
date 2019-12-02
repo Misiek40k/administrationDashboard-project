@@ -15,15 +15,13 @@
   border-bottom: $base-unit * 0.1 solid $color-border;
 }
 
-.section__content {
-  margin: 0 auto;
-}
-
 .content__list-digit {
   display: flex;
+  width: 100%;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  padding-bottom: $base-unit * 3.75;
+  padding: 0 0 $base-unit * 3.75 0;
   max-height: $base-unit * 5.5;
 
   .list-digit__item {
@@ -33,5 +31,24 @@
     width: $base-unit * 16;
     padding: $base-unit * 1.15 0 $base-unit * 0.5;
     border-bottom: $color-border solid $base-unit * 0.1;
+  }
+}
+
+.content__earnings-chart {
+  margin-bottom: $base-unit * 3;
+
+  .earnings-chart__header {
+    margin-bottom: $base-unit * 2;
+  }
+
+  .earnings-chart__color-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $base-unit * 3.75;
+
+    .color-tabs__item {
+      margin: 0 $base-unit * 0.5;
+    }
   }
 }
