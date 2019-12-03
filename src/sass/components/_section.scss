@@ -95,6 +95,10 @@
   padding: 0 0 $base-unit * 3.75 0;
   max-height: $base-unit * 5.5;
 
+  @include max-media($br-desktop) {
+    max-height: none;
+  }
+
   .list-digit__item {
     display: flex;
     justify-content: space-between;
@@ -102,6 +106,14 @@
     width: $base-unit * 16;
     padding: $base-unit * 1.15 0 $base-unit * 0.5;
     border-bottom: $color-border solid $base-unit * 0.1;
+
+    @include max-media($br-desktop) {
+      width: 80%;
+    }
+
+    @include max-media($br-tablet) {
+      width: 90%;
+    }
   }
 }
 

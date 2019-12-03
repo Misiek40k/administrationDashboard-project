@@ -140,3 +140,54 @@
     font-size: $base-unit * 0.7;
   }
 }
+
+.content__sidebar-menu {
+  display: none;
+  margin-top: $base-unit * 2;
+  padding: $base-unit * 2 0 $base-unit * 2;
+  border-top: $base-unit * 0.05 solid $color-dark-lighter;
+  border-bottom: $base-unit * 0.05 solid $color-dark-lighter;
+
+  @include max-media($br-tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .content__button {
+      border: none;
+      margin-bottom: $base-unit * 0.5;
+
+      .button__link {
+        width: 100%;
+      }
+
+      .link__img.account {
+        filter: invert(1) opacity(50%);
+      }
+
+      .link__img.notification {
+        filter: invert(1) opacity(50%);
+      }
+
+      .link__img.notification::before {
+        filter: invert(1);
+      }
+
+      .link__img.logout {
+        filter: invert(1) opacity(50%);
+      }
+    }
+
+    .content__dropdown {
+      border: none;
+      color: $color-section-background;
+      margin-bottom: $base-unit * 0.5;
+
+      .text__icon {
+        filter: invert(1) opacity(50%);
+      }
+    }
+  }
+}
