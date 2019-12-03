@@ -128,9 +128,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   .list-links__item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: $base-unit * 3;
+    border-top: $color-border solid $base-unit * 0.1;
+
+    &:last-of-type {
+      border-bottom: $color-border solid $base-unit * 0.1;
+    }
+
+    &:hover {
+      background: $color-border;
+    }
+  }
+
+  .item__header {
+    padding-left: $base-unit * 0.8;
+  }
+
+  .item__icons {
+    display: flex;
+    padding-right: $base-unit * 0.8;
+
+    .icons__icon {
+      width: $base-unit * 0.75;
+      padding: 0 $base-unit * 0.5;
+      cursor: pointer;
+      background-color: $color-dark-lighter;
+      text-indent: -9999px;
+    }
+
+    .icons__icon.links {
+      mask: url(../assets/icons/links.svg) no-repeat center;
+      width: $base-unit * 0.5;
+
+      &:hover {
+        background-color: $color-main;
+      }
+    }
+
+    .icons__icon.trash {
+      mask: url(../assets/icons/trash.svg) no-repeat center;
+
+      &:hover {
+        background-color: $color-danger;
+      }
+    }
   }
 }
