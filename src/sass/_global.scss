@@ -46,10 +46,12 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 ol {
   list-style-type: none;
+  padding: 0;
 }
 
 .container {
@@ -67,12 +69,23 @@ ol {
   border: none;
   cursor: pointer;
   border-radius: $base-unit * 0.2;
+  display: flex;
 
   .btn-icon {
     display: block;
     width: $base-unit;
     height: $base-unit;
     filter: invert(1);
+    margin-right: $base-unit * 0.25;
+  }
+
+  .btn-add {
+    width: $base-unit * 0.5;
+    transform: rotate(45deg);
+  }
+
+  .btn-text {
+    color: white;
   }
 }
 

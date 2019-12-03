@@ -1,0 +1,11 @@
+.links-section {
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content__btn {
+    padding: $base-unit * 1.25 0;
+  }
+}
