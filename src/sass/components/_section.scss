@@ -156,6 +156,10 @@
     @include max-media($br-desktop) {
       margin-left: $base-unit;
     }
+
+    @include max-media($br-tablet) {
+      margin-left: $base-unit * 2;
+    }
   }
 
   .earnings-chart__color-tabs {
