@@ -4,6 +4,11 @@
   width: $base-unit * 9.5;
   background: $color-dark;
   position: fixed;
+  z-index: 2;
+}
+
+.side-bar.hidden {
+  display: none;
 }
 
 .side-bar__content {

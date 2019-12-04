@@ -3,10 +3,16 @@
   width: 100%;
   height: $base-unit * 3;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   background: $color-section-background;
   border-bottom: $base-unit * 0.05 solid $color-border;
   position: fixed;
+  z-index: 1;
+}
+
+.top-bar__hamburger {
+  align-self: center;
+  margin-left: $base-unit;
 }
 
 .top-bar__content {
@@ -95,7 +101,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      z-index: 1;
     }
   }
 

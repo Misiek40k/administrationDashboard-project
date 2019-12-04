@@ -10,6 +10,14 @@
   }
 }
 
+.section.hidden {
+  @include max-media($br-desktop) {
+    margin: 0 auto $base-unit;
+    text-align: center;
+    max-width: 90%;
+  }
+}
+
 .section__header {
   padding: $base-unit * 0.75;
   border-bottom: $base-unit * 0.1 solid $color-border;
@@ -24,6 +32,10 @@
   padding-bottom: $base-unit * 1.9;
   border-bottom: $color-border solid $base-unit * 0.1;
   margin-bottom: $base-unit * 2;
+
+  @include max-media($br-tablet) {
+    flex-direction: column;
+  }
 
   .date__inputs {
     display: flex;
