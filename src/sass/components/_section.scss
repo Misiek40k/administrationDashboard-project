@@ -8,9 +8,7 @@
     margin: 0 auto $base-unit;
     max-width: 70%;
   }
-}
 
-.section.hidden {
   @include max-media($br-desktop) {
     margin: 0 auto $base-unit;
     text-align: center;

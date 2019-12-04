@@ -1,3 +1,17 @@
+//Side-bar hiding
+
+const sideBar = document.querySelector('.side-bar');
+const topHamburger = document.querySelector('.top-bar__hamburger');
+const sideHamburger = document.querySelector('.side-bar .top__hamburger');
+
+topHamburger.addEventListener('click', () => {
+    sideBar.classList.toggle('hidden');
+});
+
+sideHamburger.addEventListener('click', () => {
+    sideBar.classList.toggle('hidden');
+});
+
 //Chart.js
 
 const ctx = document.getElementById('chart').getContext('2d');
