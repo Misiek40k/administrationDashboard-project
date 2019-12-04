@@ -147,6 +147,10 @@
 
   .earnings-chart__header {
     margin-bottom: $base-unit * 2;
+
+    @include max-media($br-desktop) {
+      margin-left: $base-unit;
+    }
   }
 
   .earnings-chart__color-tabs {
@@ -155,8 +159,18 @@
     align-items: center;
     margin-bottom: $base-unit * 3.75;
 
+    @include max-media($br-tablet) {
+      flex-direction: column;
+      margin-bottom: $base-unit * 1.5;
+      align-items: stretch;
+    }
+
     .color-tabs__item {
       margin: 0 $base-unit * 0.5;
+
+      @include max-media($br-tablet) {
+        margin: 0 $base-unit * 2 $base-unit * 0.5 $base-unit * 2;
+      }
     }
   }
 }
@@ -181,6 +195,10 @@
 
     &:hover {
       background: $color-border;
+    }
+
+    @include max-media($br-desktop) {
+      width: 90%;
     }
   }
 
