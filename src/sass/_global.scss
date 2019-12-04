@@ -80,7 +80,6 @@ ol {
     width: $base-unit;
     height: $base-unit;
     filter: invert(1);
-    margin-right: $base-unit * 0.25;
   }
 
   .btn-add {
@@ -89,7 +88,8 @@ ol {
   }
 
   .btn-text {
-    color: white;
+    margin-left: $base-unit * 0.25;
+    color: $color-section-background;
   }
 }
 
