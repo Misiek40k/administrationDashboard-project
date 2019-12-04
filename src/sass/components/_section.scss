@@ -54,6 +54,10 @@
     display: flex;
     margin-right: $base-unit * 0.75;
 
+    @include max-media($br-tablet) {
+      flex-direction: column;
+    }
+
     .inputs__item {
       border: $color-border solid $base-unit * 0.1;
       height: $base-unit * 2;
@@ -187,7 +191,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: $base-unit * 3;
+    min-height: $base-unit * 3;
     border-top: $color-border solid $base-unit * 0.1;
 
     &:last-of-type {
@@ -201,15 +205,28 @@
     @include max-media($br-desktop) {
       width: 90%;
     }
+
+    @include max-media($br-tablet) {
+      flex-direction: column;
+      overflow: hidden;
+    }
   }
 
   .item__header {
     padding-left: $base-unit * 0.8;
+
+    @include max-media($br-tablet) {
+      padding: $base-unit * 0.25 0 $base-unit * 0.5 0;
+    }
   }
 
   .item__icons {
     display: flex;
     padding-right: $base-unit * 0.8;
+
+    @include max-media($br-tablet) {
+      padding: $base-unit * 0.5 0 $base-unit * 0.25 0;
+    }
 
     .icons__icon {
       width: $base-unit * 0.75;
