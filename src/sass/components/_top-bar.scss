@@ -12,6 +12,10 @@
 .top-bar__content {
   display: flex;
   align-items: center;
+
+  @include max-media($br-tablet) {
+    display: none;
+  }
 }
 
 .content__button {
