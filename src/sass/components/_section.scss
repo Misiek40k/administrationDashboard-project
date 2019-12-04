@@ -115,13 +115,14 @@
   display: flex;
   width: 100%;
   align-items: center;
-  flex-direction: column;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 0 $base-unit * 3.75 0;
   max-height: $base-unit * 5.5;
 
   @include max-media($br-desktop) {
     max-height: none;
+    justify-content: center;
   }
 
   .list-digit__item {
