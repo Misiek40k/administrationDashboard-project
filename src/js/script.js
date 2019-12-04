@@ -1,15 +1,24 @@
 //Side-bar hiding
 
+const sections = document.querySelectorAll('.section');
 const sideBar = document.querySelector('.side-bar');
 const topHamburger = document.querySelector('.top-bar__hamburger');
 const sideHamburger = document.querySelector('.side-bar .top__hamburger');
 
+const sectionLoop = () => {
+    for (let section of sections) {
+        section.classList.toggle('hidden');
+    }
+};
+
 topHamburger.addEventListener('click', () => {
     sideBar.classList.toggle('hidden');
+    sectionLoop();
 });
 
 sideHamburger.addEventListener('click', () => {
     sideBar.classList.toggle('hidden');
+    sectionLoop();
 });
 
 //Chart.js

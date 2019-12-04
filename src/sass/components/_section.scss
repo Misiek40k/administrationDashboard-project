@@ -11,8 +11,23 @@
 
   @include max-media($br-desktop) {
     margin: 0 auto $base-unit;
-    text-align: center;
     max-width: 90%;
+  }
+}
+
+.section.hidden {
+  margin: 0 auto $base-unit;
+
+  @include min-media($br-desktop) {
+    max-width: 85%;
+  }
+
+  @include min-media($br-xl-desktop) {
+    max-width: 70%;
+  }
+
+  &:first-of-type {
+    margin: $base-unit * 4 auto $base-unit;
   }
 }
 
