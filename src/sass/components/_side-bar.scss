@@ -1,14 +1,16 @@
 .side-bar {
   top: 0;
+  left: 0;
   height: 100vh;
   width: $base-unit * 9.5;
   background: $color-dark;
   position: fixed;
   z-index: 2;
+  transition: all 1s;
 }
 
 .side-bar.hidden {
-  display: none;
+  left: -$base-unit * 9.5;
 }
 
 .side-bar__content {
