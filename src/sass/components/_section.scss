@@ -56,6 +56,7 @@
 
     @include max-media($br-tablet) {
       flex-direction: column;
+      margin-right: 0;
     }
 
     .inputs__item {
@@ -69,6 +70,7 @@
         @include max-media($br-tablet) {
           border-right: $color-border solid $base-unit * 0.1;
           border-bottom: none;
+          border-radius: $base-unit * 0.25 $base-unit * 0.25 0 0;
         }
       }
 
@@ -79,6 +81,8 @@
 
         @include max-media($br-tablet) {
           border-left: $color-border solid $base-unit * 0.1;
+          border-radius: 0 0 $base-unit * 0.25 $base-unit * 0.25;
+          margin-bottom: $base-unit;
         }
 
         &::before {
