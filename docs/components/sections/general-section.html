@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administration Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+        href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Roboto:300,400,500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="/dist/css/style.css">
+</head>
+
+<body>
+
+    <section class="section general-section" id="general-section">
+        <div class="section__header">
+            <h2>GENERAL STATISTIC</h2>
+        </div>
+        <div class="section__content">
+            <div class="content__date">
+                <div class="date__inputs">
+                    <div class="inputs__item">
+                        <input type="date" class="inputs__input">
+                    </div>
+                    <div class="inputs__item">
+                        <img src="/src/assets/icons/banners.svg" alt="banners" class="inputs__icon">
+                        <input type="date" class="inputs__input">
+                    </div>
+                </div>
+                <button class="btn btn-main">
+                    <img src="/src/assets/icons/refresh.svg" alt="refresh" class="btn-icon">
+                </button>
+            </div>
+            <ul class="content__list-digit container">
+                <li class="list-digit__item">
+                    <h4 class="item__header">Line header</h4>
+                    <p class="item__digit">123</p>
+                </li>
+                <li class="list-digit__item">
+                    <h4 class="item__header">Line header</h4>
+                    <p class="item__digit">123</p>
+                </li>
+                <li class="list-digit__item">
+                    <h4 class="item__header">Line header</h4>
+                    <p class="item__digit">123</p>
+                </li>
+                <li class="list-digit__item">
+                    <h4 class="item__header">Line header</h4>
+                    <p class="item__digit">123</p>
+                </li>
+            </ul>
+            <div class="content__earnings-chart container">
+                <h4 class="earnings-chart__header">Earnings chart</h4>
+                <div class="earnings-chart__color-tabs">
+                    <div class="color-tabs__item color-tab color-tab-link active">
+                        <p>Signups</p>
+                    </div>
+                    <div class="color-tabs__item color-tab color-tab-main active">
+                        <p>FTD</p>
+                    </div>
+                    <div class="color-tabs__item color-tab color-tab-active">
+                        <p>Color Tab</p>
+                    </div>
+                </div>
+                <div class="earnings-chart__chart">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="../../js/script.js"></script>
+
+</body>
+
+</html>
